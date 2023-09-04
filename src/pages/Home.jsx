@@ -1,6 +1,8 @@
-import bg from "../assets/bg.png";
 import TravelPlaceCards from "./TravelPlaceCards/TravelPlaceCards";
+import useTitle from "../hooks/useTitle";
+import { Link } from "react-router-dom";
 const Home = () => {
+  useTitle('Home')
   return (
     <div className="flex lg:flex-row flex-col gap-5 max-w-[90%] mx-auto h-screen mt-20">
       <div className="max-w-[400px] text-white space-y-3">
@@ -11,7 +13,7 @@ const Home = () => {
           long natural sandy beach, and it ...
         </p>
         <button className="btn normal-case bg-[#F9A51A] hover:bg-[#F9A51A] border-0">
-          <span>Booking</span>
+          <Link to="/booking/1"><span>Booking</span></Link>
           <i class="fa-solid fa-arrow-right"></i>
         </button>
       </div>

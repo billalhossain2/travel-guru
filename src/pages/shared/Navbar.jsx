@@ -1,7 +1,9 @@
+import { Link, NavLink } from "react-router-dom";
 import logo from "../../assets/logo.png";
 const Navbar = () => {
   return (
     <nav className="flex lg:flex-row md:flex-row flex-col justify-between mt-5">
+      <Link to="/">
       <div>
       <svg xmlns="http://www.w3.org/2000/svg" width="121" height="56" viewBox="0 0 121 56" fill="none">
   <g clip-path="url(#clip0_19_766)">
@@ -33,12 +35,15 @@ const Navbar = () => {
   </defs>
 </svg>
       </div>
+      </Link>
       <ul className="flex lg:flex-row md:flex-row flex-col gap-5 items-center font-medium my-5">
-        <li><a href="">News</a></li>
-        <li><a href="">Destination</a></li>
-        <li><a href="">Blog</a></li>
-        <li><a href="">Contact</a></li>
-        <li><a href=""><button className="btn bg-[#F9A51A] hover:bg-[#F9A51A] normal-case text-[16px]">Login</button></a></li>
+        <li><NavLink to="/news">News</NavLink></li>
+        <li><NavLink to="/">Destination</NavLink></li>
+        <li><NavLink to="/blog">Blog</NavLink></li>
+        <li><NavLink to="/contact">Contact</NavLink></li>
+        <li>
+          <Link to="/login"><button className="btn bg-[#F9A51A] hover:bg-[#F9A51A] normal-case text-[16px]">Login</button>
+          </Link></li>
       </ul>
     </nav>
   )

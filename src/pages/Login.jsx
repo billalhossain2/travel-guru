@@ -1,8 +1,12 @@
-import React from 'react'
-
+import { Link } from 'react-router-dom'
+import Navbar from './shared/Navbar'
+import useTitle from '../hooks/useTitle'
 const Login = () => {
+  useTitle('Login')
   return (
-    <div class="hero min-h-screen">
+    <>
+    <Navbar></Navbar>
+    <div class="hero">
     <div class="hero-content">
       <div class="card flex-shrink-0 w-full max-w-sm shadow-2xl">
         <div>
@@ -33,7 +37,9 @@ const Login = () => {
           </div>
           <div class="form-control mt-6">
             <button class="btn bg-[#F9A51A] hover:bg-[#F9A51A] font-medium text-[16px] normal-case mb-4">Login</button>
-            <p>Don’t have an account?<a className="text-[#F9A51A] font-medium text-[16px] underline" href="">Register</a></p>
+            <p>
+              <span>Don’t have an account?</span>
+              <Link to="/register" className="text-[#F9A51A] font-medium text-[16px] underline">Register</Link></p>
           </div>
           </form>
         </div>
@@ -50,7 +56,8 @@ const Login = () => {
       </div>
     </div>
   </div>
+  </>
   )
-}
+  }
 
 export default Login

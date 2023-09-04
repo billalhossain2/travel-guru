@@ -1,18 +1,19 @@
-import GoogleMapReact from 'google-map-react'
-const location = {
-    address: "Cox's Bazar",
-    lat: 21.5833,
-    lng: 92.0167,
-  }
+import { MapContainer, Marker, Popup, TileLayer } from "react-leaflet"
+const position = [21.80, 90.18]
+import "leaflet/dist/leaflet.css";
 const Map = () => {
   return (
-    <div>
-       <GoogleMapReact
-       bootstrapURLKeys={{ key: 'AIzaSyAkiB0LLz5ZhBf69aZ4hjQc9BAoXDkY9G4' }}
-       defaultCenter={location}
-       defaultZoom={15}
-       />
-    </div>
+    <MapContainer center={position} zoom={12} scrollWheelZoom={false} className="leaflet-container">
+    <TileLayer
+       attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+       url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+    />
+    <Marker position={position}>
+      <Popup>
+        A pretty CSS3 popup. <br /> Easily customizable.
+      </Popup>
+    </Marker>
+  </MapContainer>
   )
 }
 

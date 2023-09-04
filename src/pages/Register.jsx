@@ -1,8 +1,13 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
+import Navbar from "./shared/Navbar";
+import useTitle from "../hooks/useTitle";
 const Register = () => {
+  useTitle('Register')
   return (
-    <div class="hero min-h-screen">
+    <>
+    <Navbar></Navbar>
+    <div class="hero">
       <div class="hero-content">
         <div class="card flex-shrink-0 w-full max-w-sm shadow-2xl">
           <div>
@@ -55,13 +60,16 @@ const Register = () => {
             </div>
             <div class="form-control mt-6">
               <button class="btn bg-[#F9A51A] hover:bg-[#F9A51A] font-medium text-[16px] normal-case mb-4">Create an account</button>
-              <p>Already have an account? <a className="text-[#F9A51A] font-medium text-[16px] underline" href="">Login</a></p>
+              <p>
+                <span>Already have an account?</span> 
+                <Link to="/login" className="text-[#F9A51A] font-medium text-[16px] underline">Login</Link></p>
             </div>
             </form>
           </div>
         </div>
       </div>
     </div>
+    </>
   );
 };
 

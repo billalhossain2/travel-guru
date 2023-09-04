@@ -6,7 +6,7 @@ const TravelPlaceCards = () => {
 
   const loadTravelPlaces = async () => {
     try {
-      const res = await fetch(`data/spots.json`);
+      const res = await fetch(`https://travel-guru-server-billalbelal621-gmailcom.vercel.app/spots`);
       const data = await res.json();
       setTravelPlaces(data);
     } catch (error) {

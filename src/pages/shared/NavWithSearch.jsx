@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom"
+import { Link, NavLink } from "react-router-dom"
 
 const NavWithSearch = () => {
   return (
@@ -41,11 +41,11 @@ const NavWithSearch = () => {
         <i class="fa-solid fa-magnifying-glass absolute top-4 left-3"></i>
         <input className="p-2 pl-8 border-[0.5px] rounded-lg border-solid border-[#fff] outline-none bg-transparent" type="text" placeholder="Search your Destination..."/>
     </li>
-      <li><a href="">News</a></li>
-      <li><a href="">Destination</a></li>
-      <li><a href="">Blog</a></li>
-      <li><a href="">Contact</a></li>
-      <li><a href=""><button className="btn bg-[#F9A51A] hover:bg-[#F9A51A] normal-case text-[16px]">Login</button></a></li>
+      <li><NavLink to="/news">News</NavLink></li>
+      <li><Link to="/">Destination</Link></li>
+      <li><NavLink to="/blog">Blog</NavLink></li>
+      <li><NavLink to="/contact">Contact</NavLink></li>
+      <li><Link to="/login"><button className="btn bg-[#F9A51A] hover:bg-[#F9A51A] normal-case text-[16px]">Login</button></Link></li>
     </ul>
   </nav>
   )
