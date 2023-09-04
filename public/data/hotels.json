@@ -1,0 +1,320 @@
+[
+  {
+    "id": 1,
+    "location": "Cox's Bazar",
+    "availability": {
+      "total_stays": 252,
+      "date_range": "Apr 13-17",
+      "max_guests": 3
+    },
+    "hotels": [
+      {
+        "hotel_name": "Seaside Paradise Resort",
+        "image_url": "https://rebrand.ly/2hzqzyy",
+        "room_details": {
+          "max_guests": 4,
+          "bedrooms": 2,
+          "beds": 2,
+          "bathrooms": 2
+        },
+        "amenities": ["Wi-Fi", "Air Conditioning", "Kitchen"],
+        "cancellation_policy": "Flexible - 24 hours",
+        "rating": 4.5,
+        "price_per_night": "$452/night"
+      },
+      {
+        "hotel_name": "Beachfront Bliss Hotel",
+        "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYrjmH-2A20yLCJJqElHX-IJo_HerX2QMaig&usqp=CAU",
+        "room_details": {
+          "max_guests": 3,
+          "bedrooms": 1,
+          "beds": 2,
+          "bathrooms": 1
+        },
+        "amenities": ["Wi-Fi", "Air Conditioning", "Beach Access"],
+        "cancellation_policy": "Moderate - 24 hours",
+        "rating": 4.3,
+        "price_per_night": "$410/night"
+      },
+      {
+        "hotel_name": "Oceanview Retreat",
+        "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0-mlTa7OsI84AcFmkMZFWx5KXMN6-tdgj8leX8wb6GoFUQEonqkJgb25L44tLpzHqrAY&usqp=CAU",
+        "room_details": {
+          "max_guests": 2,
+          "bedrooms": 1,
+          "beds": 1,
+          "bathrooms": 1
+        },
+        "amenities": ["Wi-Fi", "Air Conditioning", "Ocean View"],
+        "cancellation_policy": "Flexible - 48 hours",
+        "rating": 4.2,
+        "price_per_night": "$375/night"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "location": "Sundarbans",
+    "availability": {
+      "total_stays": 220,
+      "date_range": "Apr 18-22",
+      "max_guests": 2
+    },
+    "hotels": [
+      {
+        "hotel_name": "Wilderness Lodge",
+        "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyZNSzd0p-T72ftvegGkOq7xffgM2r5nJiaGLWGbP0waEumx_f1zKKVWC46waOKouOcQk&usqp=CAU",
+        "room_details": {
+          "max_guests": 3,
+          "bedrooms": 2,
+          "beds": 2,
+          "bathrooms": 1
+        },
+        "amenities": ["Wi-Fi", "Air Conditioning", "Wildlife Tours"],
+        "cancellation_policy": "Moderate cancellation",
+        "rating": 4.4,
+        "price_per_night": "$380/night"
+      },
+      {
+        "hotel_name": "Riverside Oasis",
+        "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDXaF-JWMK4LRpnmPR2USMX7Ye1QH5GatsV4DOaNFsHNk2dr6a1Anf8EjlsFwGR0gZD9s&usqp=CAU",
+        "room_details": {
+          "max_guests": 2,
+          "bedrooms": 1,
+          "beds": 1,
+          "bathrooms": 1
+        },
+        "amenities": ["Wi-Fi", "Air Conditioning", "Riverside View"],
+        "cancellation_policy": "Moderate cancellation",
+        "rating": 4.0,
+        "price_per_night": "$320/night"
+      },
+      {
+        "hotel_name": "Jungle Paradise Lodge",
+        "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyZNSzd0p-T72ftvegGkOq7xffgM2r5nJiaGLWGbP0waEumx_f1zKKVWC46waOKouOcQk&usqp=CAU",
+        "room_details": {
+          "max_guests": 4,
+          "bedrooms": 2,
+          "beds": 2,
+          "bathrooms": 2
+        },
+        "amenities": ["Wi-Fi", "Air Conditioning", "Jungle Excursions"],
+        "cancellation_policy": "Flexible cancellation",
+        "rating": 4.6,
+        "price_per_night": "$450/night"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "location": "Jaflong",
+    "availability": {
+      "total_stays": 180,
+      "date_range": "Apr 15-19",
+      "max_guests": 4
+    },
+    "hotels": [
+      {
+        "hotel_name": "Riverfront Retreat",
+        "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0-mlTa7OsI84AcFmkMZFWx5KXMN6-tdgj8leX8wb6GoFUQEonqkJgb25L44tLpzHqrAY&usqp=CAU",
+        "room_details": {
+          "max_guests": 3,
+          "bedrooms": 1,
+          "beds": 2,
+          "bathrooms": 1
+        },
+        "amenities": ["Wi-Fi", "Air Conditioning", "Riverside View"],
+        "cancellation_policy": "Moderate cancellation",
+        "rating": 4.0,
+        "price_per_night": "$275/night"
+      },
+      {
+        "hotel_name": "Mountain View Lodge",
+        "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ70Q73JRboftoJlIINTG35VIWCZ7_S0jFdzDE1DpTAynJ2KiOSGsBrnU6UdDfS0Fa4n20&usqp=CAU",
+        "room_details": {
+          "max_guests": 2,
+          "bedrooms": 1,
+          "beds": 1,
+          "bathrooms": 1
+        },
+        "amenities": ["Wi-Fi", "Air Conditioning", "Mountain View"],
+        "cancellation_policy": "Flexible cancellation",
+        "rating": 4.2,
+        "price_per_night": "$310/night"
+      },
+      {
+        "hotel_name": "Valley Retreat Inn",
+        "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgb2-LQLqQy6gTdCP_y8Py5M_GVbayxmkZ07Q8_KhMuf0cPy5DQZqoKsIMRgoZvy_JZIE&usqp=CAU",
+        "room_details": {
+          "max_guests": 3,
+          "bedrooms": 2,
+          "beds": 2,
+          "bathrooms": 1
+        },
+        "amenities": ["Wi-Fi", "Air Conditioning", "Valley View"],
+        "cancellation_policy": "Moderate cancellation",
+        "rating": 4.1,
+        "price_per_night": "$295/night"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "location": "Paharpur",
+    "availability": {
+      "total_stays": 210,
+      "date_range": "Apr 16-20",
+      "max_guests": 3
+    },
+    "hotels": [
+      {
+        "hotel_name": "Historical Haven",
+        "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgb2-LQLqQy6gTdCP_y8Py5M_GVbayxmkZ07Q8_KhMuf0cPy5DQZqoKsIMRgoZvy_JZIE&usqp=CAU",
+        "room_details": {
+          "max_guests": 2,
+          "bedrooms": 1,
+          "beds": 1,
+          "bathrooms": 1
+        },
+        "amenities": ["Wi-Fi", "Air Conditioning", "Historical Tours"],
+        "cancellation_policy": "Flexible cancellation",
+        "rating": 4.3,
+        "price_per_night": "$200/night"
+      },
+      {
+        "hotel_name": "Archaeological Lodge",
+        "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyZNSzd0p-T72ftvegGkOq7xffgM2r5nJiaGLWGbP0waEumx_f1zKKVWC46waOKouOcQk&usqp=CAU",
+        "room_details": {
+          "max_guests": 3,
+          "bedrooms": 2,
+          "beds": 2,
+          "bathrooms": 1
+        },
+        "amenities": ["Wi-Fi", "Air Conditioning", "Archaeological Tours"],
+        "cancellation_policy": "Moderate cancellation",
+        "rating": 4.0,
+        "price_per_night": "$215/night"
+      },
+      {
+        "hotel_name": "Countryside Retreat",
+        "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThlfN3nOmP0g4UIhGPMn8O9qfz9ibMVPoe5R3j33DD5ZIE6kgkhni_N6_nlZ6SZYKkwBw&usqp=CAU",
+        "room_details": {
+          "max_guests": 2,
+          "bedrooms": 1,
+          "beds": 1,
+          "bathrooms": 1
+        },
+        "amenities": ["Wi-Fi", "Air Conditioning", "Countryside Views"],
+        "cancellation_policy": "Flexible cancellation",
+        "rating": 4.2,
+        "price_per_night": "$190/night"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "location": "Kuakata",
+    "availability": {
+      "total_stays": 210,
+      "date_range": "Apr 16-20",
+      "max_guests": 2
+    },
+    "hotels": [
+      {
+        "hotel_name": "Beachside Serenity Resort",
+        "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS480ZXS3v7-a0NGbqoxdXY221NP04u_3lIivds-BUKNzCT5uRJjrG0nt46QKBDzsKduX8&usqp=CAU",
+        "room_details": {
+          "max_guests": 4,
+          "bedrooms": 2,
+          "beds": 2,
+          "bathrooms": 1
+        },
+        "amenities": ["Wi-Fi", "Air Conditioning", "Beach Access"],
+        "cancellation_policy": "Flexible cancellation",
+        "rating": 4.4,
+        "price_per_night": "$360/night"
+      },
+      {
+        "hotel_name": "Coastal Retreat Lodge",
+        "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxgOvv184Vhs5RZOQciSUnWySO4Thph481BX4isNpPBj7wG0zWYOuvfd7Ezh6FcoPN6bw&usqp=CAU",
+        "room_details": {
+          "max_guests": 2,
+          "bedrooms": 1,
+          "beds": 1,
+          "bathrooms": 1
+        },
+        "amenities": ["Wi-Fi", "Air Conditioning", "Coastal Views"],
+        "cancellation_policy": "Moderate cancellation",
+        "rating": 4.1,
+        "price_per_night": "$320/night"
+      },
+      {
+        "hotel_name": "Seaview Escape Inn",
+        "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0-mlTa7OsI84AcFmkMZFWx5KXMN6-tdgj8leX8wb6GoFUQEonqkJgb25L44tLpzHqrAY&usqp=CAU",
+        "room_details": {
+          "max_guests": 3,
+          "bedrooms": 2,
+          "beds": 2,
+          "bathrooms": 1
+        },
+        "amenities": ["Wi-Fi", "Air Conditioning", "Seaview Balcony"],
+        "cancellation_policy": "Flexible cancellation",
+        "rating": 4.3,
+        "price_per_night": "$330/night"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "location": "Saint Martin's Island",
+    "availability": {
+      "total_stays": 190,
+      "date_range": "Apr 19-23",
+      "max_guests": 2
+    },
+    "hotels": [
+      {
+        "hotel_name": "Beachfront Bliss Hotel",
+        "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpw6iO0Pp7maUhSt66Suk_m94Mv_Q6hjSe8w&usqp=CAU",
+        "room_details": {
+          "max_guests": 2,
+          "bedrooms": 1,
+          "beds": 1,
+          "bathrooms": 1
+        },
+        "amenities": ["Wi-Fi", "Air Conditioning", "Beachfront View"],
+        "cancellation_policy": "Flexible cancellation",
+        "rating": 4.2,
+        "price_per_night": "$390/night"
+      },
+      {
+        "hotel_name": "Island Oasis Resort",
+        "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7TRdx_vMlwoje4RfcxBsXKG2VuadzQqPhfQ&usqp=CAU",
+        "room_details": {
+          "max_guests": 3,
+          "bedrooms": 1,
+          "beds": 2,
+          "bathrooms": 1
+        },
+        "amenities": ["Wi-Fi", "Air Conditioning", "Island Views"],
+        "cancellation_policy": "Moderate cancellation",
+        "rating": 4.0,
+        "price_per_night": "$350/night"
+      },
+      {
+        "hotel_name": "Seaside Serenity Lodge",
+        "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRkCWD3UigxHNm79x_SQ_3eH-OuGntumaqPA&usqp=CAU",
+        "room_details": {
+          "max_guests": 2,
+          "bedrooms": 1,
+          "beds": 1,
+          "bathrooms": 1
+        },
+        "amenities": ["Wi-Fi", "Air Conditioning", "Seaside Balcony"],
+        "cancellation_policy": "Flexible cancellation",
+        "rating": 4.1,
+        "price_per_night": "$360/night"
+      }
+    ]
+  }
+]

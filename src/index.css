@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg-image{
+    background-image: url('./assets/bg.png');
+    background-size: cover;
+}
+
+.overlay{
+    background:#000000b4;
+    height: 100%;
+}
+
+body{
+   max-width: 90%;
+   margin: 0 auto;
+}

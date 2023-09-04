@@ -1,0 +1,52 @@
+[
+    {
+      "id": 1,
+      "origin": "Dhaka",
+      "destination": "Cox's Bazar",
+      "image_url": "https://shorturl.at/yAF07",
+      "from_date": "2023-10-01",
+      "to_date": "2023-10-07"
+    },
+    {
+      "id": 2,
+      "origin": "Chittagong",
+      "destination": "Sundarbans",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRg5fvTDWjcvOyvTZFj3I9C1jgsjL9K7zSstA&usqp=CAU",
+      "from_date": "2023-11-15",
+      "to_date": "2023-11-20"
+    },
+    {
+      "id": 3,
+      "origin": "Sylhet",
+      "destination": "Jaflong",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgL9jihmMoLgsUWqxZZLcVLV6fOU8t6jXEYQ&usqp=CAU",
+      "from_date": "2023-09-05",
+      "to_date": "2023-09-08"
+    },
+    {
+      "id": 4,
+      "origin": "Rajshahi",
+      "destination": "Paharpur",
+      "image_url": "https://shorturl.at/oszG6",
+      "from_date": "2023-12-10",
+      "to_date": "2023-12-15"
+    },
+    {
+      "id": 5,
+      "origin": "Barisal",
+      "destination": "Kuakata",
+      "image_url": "https://rb.gy/3tl1w",
+      "from_date": "2023-09-20",
+      "to_date": "2023-09-25"
+    },
+    {
+      "id": 6,
+      "origin": "Cox's Bazar",
+      "destination": "Saint Martin's Island",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRChDcKUukUFodgCWldjsbHj1-Sk1PuoL0Org&usqp=CAU",
+      "from_date": "2023-11-01",
+      "to_date": "2023-11-05"
+    }
+  ]
+  
+  
