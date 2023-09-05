@@ -3,7 +3,9 @@ import Hotel from "./Hotel";
 import Navbar from "../shared/Navbar";
 import { useLoaderData } from "react-router-dom";
 import Map from "../../Map";
+import useTitle from "../../hooks/useTitle";
 const Hotels = () => {
+  useTitle("Hotels")
   const {availability:{total_stays, date_range, max_guests}, location, hotels} = useLoaderData();
   console.log(useLoaderData())
   return (

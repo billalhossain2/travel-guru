@@ -1,6 +1,10 @@
 import { useEffect, useState } from "react";
 import TravelPlaceCard from "./TravelPlaceCard";
+import { useContext } from "react";
+import { userContext } from "../../providers/AuthProvider";
 const TravelPlaceCards = () => {
+  const user = useContext(userContext)
+  console.log("auth user==============>", user)
   const [travelPlaces, setTravelPlaces] = useState([]);
   const [error, setError] = useState("");
 

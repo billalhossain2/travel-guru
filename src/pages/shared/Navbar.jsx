@@ -1,6 +1,13 @@
+import { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
-import logo from "../../assets/logo.png";
+import { userContext } from "../../providers/AuthProvider";
 const Navbar = () => {
+  const {user, signOutUser} = useContext(userContext)
+  const handleSignOutUser = ()=>{
+    signOutUser()
+    .then(()=>console.log("Successfully signed out"))
+    .catch((error)=>console.log("Signout Failed=====> ", error.message))
+  }
   return (
     <nav className="flex lg:flex-row md:flex-row flex-col justify-between mt-5">
       <Link to="/">
@@ -42,8 +49,11 @@ const Navbar = () => {
         <li><NavLink to="/blog">Blog</NavLink></li>
         <li><NavLink to="/contact">Contact</NavLink></li>
         <li>
-          <Link to="/login"><button className="btn bg-[#F9A51A] hover:bg-[#F9A51A] normal-case text-[16px]">Login</button>
-          </Link></li>
+           {
+            !user ? <Link to="/login"><button className="btn bg-[#F9A51A] hover:bg-[#F9A51A] normal-case text-[16px]">Login</button>
+            </Link> : <button onClick={handleSignOutUser} className="btn bg-[#F9A51A] hover:bg-[#F9A51A] normal-case text-[16px]">Logout</button>
+           }
+        </li>
       </ul>
     </nav>
   )

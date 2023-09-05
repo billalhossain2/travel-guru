@@ -1,8 +1,10 @@
 // src/components/NewsPage.js
 import React from 'react';
 import Navbar from './shared/Navbar';
+import useTitle from '../hooks/useTitle';
 
 const News = () => {
+  useTitle("News")
   const newsArticles = [
     {
       id: 1,

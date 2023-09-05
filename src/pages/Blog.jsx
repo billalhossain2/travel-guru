@@ -1,5 +1,7 @@
+import useTitle from "../hooks/useTitle";
 import Navbar from "./shared/Navbar";
 const Blog = () => {
+  useTitle("Blog")
   return (
     <>
      <Navbar></Navbar>

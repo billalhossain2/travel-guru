@@ -1,5 +1,7 @@
+import useTitle from "../hooks/useTitle";
 import Navbar from "./shared/Navbar";
 const Contact = () => {
+  useTitle("Contact")
   return (
     <>
     <Navbar></Navbar>

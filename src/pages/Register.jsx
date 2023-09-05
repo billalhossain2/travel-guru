@@ -1,9 +1,55 @@
-import React from "react";
+import React, { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import Navbar from "./shared/Navbar";
 import useTitle from "../hooks/useTitle";
+import { userContext } from "../providers/AuthProvider";
 const Register = () => {
   useTitle('Register')
+
+  const {registerUser} = useContext(userContext)
+  const [success, setSuccess] = useState("");
+  const [error, setError] = useState("")
+
+  const handleRegister = (ev)=>{
+    ev.preventDefault()
+    setSuccess("")
+    setError("")
+//pwd: bC5*aB
+
+    const form = ev.target;
+    const fName = form.fname.value;
+    const lName = form.lname.value;
+    const email = form.email.value;
+    const password = form.password.value;
+    const confirmPassword = form.cpassword.value;
+  
+
+    //validate input fields
+    if(!fName || !lName || !email || !password || !confirmPassword){
+      return setError("Please fill in the all fields")
+    }else if(password !== confirmPassword){
+      return setError("Passowrd does not match!")
+    }else if(!(/[a-z]/).test(password)){
+      return setError("Your password should contain at least one lower case letter")
+    }else if(!(/[A-Z]/).test(password)){
+      return setError("Your password should contain at least one upper case letter")
+    }else if(!(/[0-9]/).test(password)){
+      return setError("Your password should contain at least one digit")
+    }else if(!(/[@\.\-\*_\$%\&]/).test(password)){
+      return setError("Your password should contain at least one special character")
+    }else if(password.length < 6){
+      return setError("Your password should be 6 characters or longer")
+    }
+
+    //register a new user
+    registerUser(email, password)
+    .then(()=>{
+      setSuccess("Successfully create a new user")
+    })
+    .catch(error =>{
+      setError(error.message)
+    })
+  }
   return (
     <>
     <Navbar></Navbar>
@@ -11,7 +57,7 @@ const Register = () => {
       <div class="hero-content">
         <div class="card flex-shrink-0 w-full max-w-sm shadow-2xl">
           <div>
-            <form class="card-body" action="">
+            <form class="card-body" action="" onSubmit={handleRegister}>
             <h1 className="font-bold text-2xl mb-3">Create an account</h1>
             <div class="form-control">
               <input
@@ -57,6 +103,8 @@ const Register = () => {
                   Forgot password?
                 </a>
               </label>
+              <label className="text-center text-[green] font-bold">{success}</label>
+              <label className="text-center text-[red] font-bold">{error}</label>
             </div>
             <div class="form-control mt-6">
               <button class="btn bg-[#F9A51A] hover:bg-[#F9A51A] font-medium text-[16px] normal-case mb-4">Create an account</button>

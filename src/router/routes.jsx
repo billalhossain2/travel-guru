@@ -8,6 +8,7 @@ import Register from "../pages/Register";
 import Contact from "../pages/Contact";
 import Blog from "../pages/Blog";
 import News from "../pages/News";
+import PrivateRoute from "../routes/PrivateRoute";
 const router = createBrowserRouter([
     {
         path:'/',
@@ -26,7 +27,7 @@ const router = createBrowserRouter([
     },
     {
         path:'/:destination/hotels/:id',
-        element:<Hotels></Hotels>,
+        element:<PrivateRoute><Hotels></Hotels></PrivateRoute>,
         loader:(({params:{id}})=>fetch(`https://travel-guru-server-billalbelal621-gmailcom.vercel.app/hotels/${id}`))
     },
     {
@@ -43,11 +44,11 @@ const router = createBrowserRouter([
     },
     {
         path:"/blog",
-        element:<Blog></Blog>
+        element:<PrivateRoute><Blog></Blog></PrivateRoute>
     },
     {
         path:"/news",
-        element:<News></News>
+        element:<PrivateRoute><News></News></PrivateRoute>
     }
 ])
 
