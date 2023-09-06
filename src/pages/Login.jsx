@@ -1,13 +1,14 @@
 import { Link, useLocation, useNavigate } from 'react-router-dom'
 import Navbar from './shared/Navbar'
 import useTitle from '../hooks/useTitle'
-import { useContext, useState } from 'react'
+import { useContext, useRef, useState } from 'react'
 import { userContext } from '../providers/AuthProvider'
 const Login = () => {
   useTitle('Login')
-  const {user, signInWithGoogle, signInWithFacebook, loginWithEmailAndPwd} = useContext(userContext)
+  const {user, signInWithGoogle, signInWithFacebook, loginWithEmailAndPwd, resetPassword} = useContext(userContext)
   const [error, setError] = useState("")
   const [success, setSuccess] = useState("")
+  const [show, setShow] = useState(false)
   const from = useLocation()?.state?.from;
   const navigate = useNavigate()
 
@@ -61,6 +62,14 @@ const Login = () => {
       setError(error.message)
     })
   }
+   //reset password
+   const emailRef = useRef()
+  const handleForgotPassword = async()=>{
+    const email = emailRef.current.value;
+    resetPassword(email)
+    .then(()=>setSuccess("Password reset email sent!"))
+    .catch(error => setError(error.message))
+  }
   return (
     <>
     <Navbar></Navbar>
@@ -76,21 +85,25 @@ const Login = () => {
               placeholder="Username or Email"
               class="input input-bordered"
               name="email"
+              ref={emailRef}
             />
           </div>
-          <div class="form-control">
+          <div class="form-control relative">
             <input
-              type="password"
+              type={show ? 'text' : 'password'}
               placeholder="Passowrd"
               class="input input-bordered"
               name="password"
             />
+            {
+              show ?  <i onClick={()=>setShow(!show)} class="fa-regular fa-eye absolute right-3 top-2 text-2xl cursor-pointer"></i> : <i onClick={()=>setShow(!show)} class="fa-regular fa-eye-slash absolute right-3 top-2 text-2xl cursor-pointer"></i>
+            }
           </div>
           <div class="form-control">
-            <label class="label">
-              <a href="" class="label-text-alt link link-hover">
+            <label onClick={handleForgotPassword} class="label">
+              <span class="label-text-alt link link-hover">
                 Forgot password?
-              </a>
+              </span>
             </label>
           </div>
           <div class="form-control mt-6">
