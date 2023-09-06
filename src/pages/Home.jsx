@@ -1,10 +1,26 @@
 import TravelPlaceCards from "./TravelPlaceCards/TravelPlaceCards";
 import useTitle from "../hooks/useTitle";
 import { Link } from "react-router-dom";
+import { useEffect, useState } from "react";
 
 const Home = () => {
   useTitle("Home");
-  
+  const [travelPlaces, setTravelPlaces] = useState([]);
+  const [error, setError] = useState("");
+
+  const loadTravelPlaces = async () => {
+    try {
+      const res = await fetch(
+        `https://travel-guru-server-billalbelal621-gmailcom.vercel.app/spots`
+      );
+      const data = await res.json();
+      setTravelPlaces(data);
+    } catch (error) {
+      setError(error);
+    }
+  };
+
+  useEffect(() => loadTravelPlaces, []);
   return (
     <div className="flex lg:flex-row flex-col gap-5 max-w-[90%] mx-auto h-screen mt-20">
       <div className="max-w-[400px] text-white space-y-3">
@@ -22,7 +38,7 @@ const Home = () => {
         </button>
       </div>
       {/* travelcards  */}
-      <TravelPlaceCards></TravelPlaceCards>
+      <TravelPlaceCards travelPlaces={travelPlaces}></TravelPlaceCards>
     </div>
   );
 };
